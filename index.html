@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- Declara que este é um documento HTML5 -->
+<html lang="pt-br">
+<!-- Define o documento HTML com idioma português do Brasil -->
+<head>
+    <!-- Seção de metadados e links para recursos externos -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 (suporta acentos e caracteres especiais) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para responsividade em dispositivos móveis -->
+    <title>Good News Only</title>
+    <!-- Título que aparece na aba do navegador -->
+    
+    <!-- Pré-conexão com servidores de fontes para melhor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Pré-conecta ao domínio das fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Pré-conecta ao domínio onde as fontes estão hospedadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Importa a fonte Roboto com todas as variações de peso (de 100 a 900) -->
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Link para o arquivo CSS externo localizado na pasta css -->
+</head>
+<body>
+    <!-- Corpo visível do site -->
+    
+    <header>
+        <!-- Cabeçalho do site (contém logo e menu) -->
+        <div class="container header-top">
+            <!-- Divisão container para agrupar logo e busca -->
+            <h1>Good News Only</h1>
+            <!-- Título principal do site (aparece no topo) -->
+            
+            <form class="search-form">
+                <!-- Formulário de busca -->
+                <input type="search" placeholder="Busque uma notícia" name="pesquisa-site" id="pesquisa-site">
+                <!-- Campo de busca com placeholder e identificadores -->
+                <button type="submit">Pesquisar</button>
+                <!-- Botão para submeter a busca -->
+            </form>
+        </div>
+        
+        <nav class="container">
+            <!-- Navegação principal do site -->
+            <ul class="menu">
+                <!-- Lista não ordenada para os itens do menu principal -->
+                <li>
+                    <!-- Primeiro item do menu -->
+                    <span>Esportes</span>
+                    <!-- Texto do item do menu (não clicável) -->
+                    
+                    <ul class="submenu">
+                        <!-- Submenu dropdown -->
+                        <li><a href="#">Futebol</a></li>
+                        <!-- Item do submenu com link vazio (#) -->
+                        <li><a href="#">Basquete</a></li>
+                        <li><a href="#">Vôlei</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <!-- Segundo item do menu -->
+                    <span>Animaizinhos</span>
+                    <ul class="submenu">
+                        <li><a href="#">Gatos</a></li>
+                        <li><a href="#">Cachorros</a></li>
+                        <li><a href="#">Selvagens</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+
+    <div class="container main-content">
+        <!-- Container principal do conteúdo (notícias + sidebar) -->
+        <main class="news-container">
+            <!-- Conteúdo principal do site -->
+            
+            <section class="featured-news">
+                <!-- Seção para a notícia em destaque -->
+                <h2>Em destaque!</h2>
+                <!-- Título da seção -->
+                
+                <article class="news-item">
+                    <!-- Artigo/notícia individual -->
+                    <a href="#" class="news-link">
+                        <!-- Link que envolve toda a notícia -->
+                        <img src="./img/OIP.jpg" alt="Notícia em destaque">
+                        <!-- Imagem da notícia com texto alternativo -->
+                        
+                        <div class="news-content">
+                            <!-- Divisão para conteúdo textual da notícia -->
+                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                            <!-- Título da notícia -->
+                            <p>Descrição mais detalhada da notícia em destaque...</p>
+                            <!-- Parágrafo com descrição -->
+                        </div>
+                    </a>
+                </article>
+            </section>
+
+            <section class="latest-news">
+                <!-- Seção para últimas notícias -->
+                <h2>Últimas notícias</h2>
+                <!-- Título da seção -->
+                
+                <div class="news-grid">
+                    <!-- Container para grid de notícias -->
+                    <article class="news-item">
+                        <!-- Primeira notícia -->
+                        <a href="#" class="news-link">
+                            <img src="./img/wallpapersden.com_car-pixel-art_320x320.jpg" alt="Notícia 1">
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        </a>
+                    </article>
+                    
+                    <article class="news-item">
+                        <!-- Segunda notícia -->
+                        <a href="#" class="news-link">
+                            <img src="./img/wallpapersden.com_real-coordinate-space-space-real-space_320x320.jpg" alt="Notícia 2">
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        </a>
+                    </article>
+                    
+                    <article class="news-item">
+                        <!-- Terceira notícia -->
+                        <a href="#" class="news-link">
+                            <img src="./img/wallpapersden.com_retro-wave-sunset-and-running-car_320x320.jpg" alt="Notícia 3">
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        </a>
+                    </article>
+                    
+                    <article class="news-item">
+                        <!-- Quarta notícia -->
+                        <a href="#" class="news-link">
+                            <img src="./img/wallpapersden.com_k-night-sky-concept-art_320x320.jpg" alt="Notícia 4">
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <!-- Barra lateral (conteúdo secundário) -->
+            <section class="new-articles">
+                <!-- Seção de novidades -->
+                <h2>Novidades</h2>
+                <!-- Título da seção -->
+                
+                <article class="sidebar-item">
+                    <!-- Primeiro item da sidebar -->
+                    <a href="#" class="sidebar-link">
+                        <img src="./img/wallpapersden.com_anime-landscape-hd-ai-city_320x320.jpg" alt="Novidade 1">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                </article>
+                
+                <article class="sidebar-item">
+                    <!-- Segundo item da sidebar -->
+                    <a href="#" class="sidebar-link">
+                        <img src="./img/wallpapersden.com_galaxies-pixel-art_320x320.jpg" alt="Novidade 2">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                </article>
+                
+                <article class="sidebar-item">
+                    <!-- Terceiro item da sidebar -->
+                    <a href="#" class="sidebar-link">
+                        <img src="./img/wallpapersden.com_landscape-pixel-art_320x320.jpg" alt="Novidade 3">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                </article>
+                
+                <article class="sidebar-item">
+                    <!-- Quarto item da sidebar -->
+                    <a href="#" class="sidebar-link">
+                        <img src="./img/wallpapersden.com_tree-reflection-in-lake_320x320.jpg" alt="Novidade 4">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                </article>
+            </section>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <!-- Rodapé do site -->
+        <div class="container">
+            <!-- Container para conteúdo do rodapé -->
+            <p>&copy; 2023 Good News Only. Todos os direitos reservados.</p>
+            <!-- Texto de copyright -->
+        </div>
+    </footer>
+</body>
+</html>
